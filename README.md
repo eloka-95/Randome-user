@@ -1,3 +1,5 @@
+# To view this project on live server
+Open [https://random-user-9be67.web.app/](https://random-user-9be67.web.app/).
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
