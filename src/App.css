@@ -224,6 +224,13 @@ box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.16);
             flex-direction: row;
             width: 100%;
          }
+
+         .counter-wrapper{
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
 }
 
 /* DESKTOP MEDIA QUERY SECTION  */

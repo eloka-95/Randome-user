@@ -5,7 +5,7 @@ import { UserAuth } from '../context/AuthContext';
 
 const Login = () => {
     const { googleSignIn, user} = UserAuth();
-    const navigate = useNavigate();
+    const navigateUser = useNavigate();
     const handleGoogleSignIn = async () =>{
         try {
             await googleSignIn()
@@ -17,7 +17,7 @@ const Login = () => {
         // control's user redirect when they actually signed in 
         useEffect(()=>{
             if(user != null){
-                navigate("/account")
+                navigateUser("/account")
             }
         }, [user]);
 

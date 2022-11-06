@@ -10,7 +10,7 @@ const Posts = ({ posts, loading }) => {
     <div className='post'>
       {posts.map(post => (
         <div key={post.location.street.number} className='post-wrapper'>
-        <div><img src={post.picture.large} alt="users picture"/></div>
+        <div><img src={post.picture.large} alt="users"/></div>
           <div>
              <p>Name:{post.name.title}{post.name.first}{post.name.last}</p> 
              <p> Country:{post.location.country}</p> 

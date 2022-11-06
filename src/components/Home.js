@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import Girl from '../image/prince-akachi-RcqKOjX0ZHE-unsplash.jpg'
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
                 <Link to={"/login"}>Login</Link>
             </div>
             <div className='home-img'>
-                <img src={Girl} alt="female image"/>
+                <img src={Girl} alt="black child"/>
             </div>
         </main>
     );
