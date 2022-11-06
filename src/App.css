@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* NAV BAR SECTION  */
+.nav-wrapper a {
+    border-radius: 10%;
+    box-shadow: inset 0 0 0 0 #fbf311;
+    color: #050606;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+a {
+    box-shadow: inset 0 0 0 0 #fbf311;
+    color: #060606;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+
+  a:hover {
+    box-shadow: inset 100px 0 0 0 #edf2ac;
+    color: white;
+  }
+
+  .nav-wrapper .logo a{
+    box-shadow: inset 0 0 0 0 rgb(7, 17, 23);
+    color: goldenrod;
+    
+  }
+  .nav-wrapper .logo a{
+    background-color: rgb(7, 17, 23);
+    
+    
+  }
+  
+/* END OF NAV BAR SECTION  */
+.nav-wrapper a{
+    color: goldenrod;
+    padding: 10px;
+}
+
+/* HOME SECTION  */
+.home{
+    background-color: rgb(7, 17, 23);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position:100% ;
+
+}
+
+.home{
+    display: flex;
+    justify-content: space-around;
+
+}
+.home-img{
+    width: 50%;
+    border-radius: 50%;}
+.home-text{
+    position: fixed;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: gold;
+    }
+.home-text h3 span{
+        font-size: larger;
+        color: aliceblue;
+        font-weight: 800px;
+    }
+.home-text a{
+    background-color: rgb(255, 255, 255);
+    padding: 14px 25px;
+    border-radius: 10%;
+    color: goldenrod;
+    text-decoration: none;
+}
+.home-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 25%;
+    /* END OF HOME SECTION  */
+}
+
+/* ABOUT PAGE SECTION  */
+.about{
+    background-color: rgb(7, 17, 23);
+    height: 100vh;
+}
+.about h1{
+    text-align: center;
+    font-style: italic;
+    color: goldenrod;
+    padding: 20px;
+}
+.about p{
+    text-align: center;
+    padding: 20px;
+    margin-top: 70px;
+    color: goldenrod;
+}
+/* END OF ABOUT PAGE  ......*/
+.counter{
+    background-color: rgb(7, 17, 23);
+    height: 100vh;
+}
+
+.counter-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.button-wrapper button{
+margin: 40px;
+padding: 20px;
+background-color: aqua;
+width: 100px;
+border-radius: 40px;
+box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.16);
+
+}
+.counter-display{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: goldenrod;
+    font-size: 2rem;
+}
+.counter p{
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    color: goldenrod;
+}
+ /* COUNTER SECTION ..... */
+
+ /* LOGIN SECTION ... */
+
+ .login{
+    background-color: rgb(7, 17, 23);
+    height: 100vh;
+ }
+
+ .login-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+ /* END OF LOGIN SECTION  */
+
+ .account{
+    background-color: rgb(7, 17, 23);
+ }
+
+ .post .post-wrapper{
+    box-shadow: 0 2px 5px 0 rgba(231, 244, 247, 0.16);
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+ }
+.post-wrapper p{
+    color: goldenrod;
+}
+.post-wrapper img{
+    height: 160px;
+    border-radius: 50%;
+}
+ /* END OF COUNTER SECTION .....  */
+
+ .page-item{
+    margin-left: 20px;
+    width: 20px;
+ }
+
+ .page-item button{
+    width: 25px;
+    border-radius: 50%;
+    color: rgb(32, 137, 218);
+    
+ }
+ .acct-button button{
+    margin-left: 30px;
+    border-radius: 20px;
+ }
+ /* MOBILE MEDIA QUERRY SECTION ..... */
+@media screen and (max-width:767px) {
+    /* HOME VIEW SECTION  */
+    .home-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-left: 5%;
+    }
+    .home{
+        display: flex;
+        /* justify-content: space-around; */
+    
+    }
+    .home-img{
+        width: 100%;
+        border-radius: 50%;
+
+    }
+    .home-text{
+        position: fixed;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        color: gold;
+        }
+        /* END OF HOME SECTION  */
+        .post .post-wrapper{
+            box-shadow: 0 2px 5px 0 rgba(231, 244, 247, 0.16);
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+         }
+}
+
+/* DESKTOP MEDIA QUERY SECTION  */
+@media screen and (min-width:1024px) {
+    .nav-wrapper a {
+        margin-left: 40px;
+    }
+}
