@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { GoogleButton } from 'react-google-button';
 import { useNavigate } from 'react-router-dom';
 import { UserAuth } from '../context/AuthContext';
+import { Helmet } from 'react-helmet-async';
 
 const Login = () => {
     const { googleSignIn, user} = UserAuth();
@@ -22,7 +23,13 @@ const Login = () => {
         }, [user]);
 
     return(
+        
         <div className="login">
+        <Helmet>
+            <title>randomuser login page</title>
+            <meta name='description' content='ramdomuser login page  '/>
+            <link rel='canonical' href='/login' />
+        </Helmet>
             <div className='login-wrapper'>
                 <GoogleButton onClick={  handleGoogleSignIn }/>
             </div>

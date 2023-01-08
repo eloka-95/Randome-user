@@ -1,8 +1,14 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 function About(props) {
     return (
         <div className='about'>
+        <Helmet>
+            <title>randomuser about page</title>
+            <meta name='description' content='This section explain the task i need to complete in this project'/>
+            <link rel='canonical' href='/about' />
+        </Helmet>
             <h1>Random</h1>
             <p>Random project is an Altschool Africa exam project
             in which the student is expected to Set a firebase hosting and authentication using the Google Authentication method,
