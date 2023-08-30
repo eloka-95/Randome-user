@@ -1,7 +1,7 @@
-# To view this project on live server
+# To view this project on the live server
 Open [https://random-user-9be67.web.app/](https://random-user-9be67.web.app/).
 # Getting Started with Create React App
-
+This is a react project that displays a list of products fetched from an API Also Firbase technology was used for user authentication.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
